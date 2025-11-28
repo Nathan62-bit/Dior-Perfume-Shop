@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Dior Perfume Shop</title>
+<style>
+  body { font-family: Arial, sans-serif; background:#000; color:#fff; margin:0; text-align:center; }
+
+  h1 {
+    background:#fff;
+    color:#000;
+    padding:22px;
+    margin:0;
+    font-size:26px;
+    font-weight:900;
+    letter-spacing:1.5px;
+    animation:slideDown 1.2s ease-out;
+  }
+
+  .container { display:flex; justify-content:center; gap:35px; flex-wrap:wrap; padding:40px 20px; }
+
+  .card {
+    width:250px;
+    background:#fff;
+    color:#000;
+    padding:18px;
+    border-radius:12px;
+    border:2px solid #fff;
+    box-shadow:0 4px 12px rgba(255,255,255,0.2);
+    cursor:pointer;
+    opacity:0;
+    transform:translateY(20px);
+    animation:fadeUp 1.2s ease forwards;
+    transition:0.3s;
+  }
+
+  .card:hover {
+    transform:scale(1.07);
+    box-shadow:0 0 18px #fff;
+  }
+
+  .card img {
+    width:200px;
+    height:210px;
+    object-fit:contain;
+    border-radius:8px;
+    border:2px solid #000;
+    padding:8px;
+    margin-bottom:6px;
+    animation:pulse 2.5s infinite alternate;
+  }
+
+  .card a { text-decoration:none; color:#000; }
+
+  .card h3 {
+    font-size:20px;
+    margin:10px 0 5px;
+    font-weight:900;
+    text-transform:uppercase;
+  }
+
+  @keyframes slideDown { 0%{transform:translateY(-40px);opacity:0;}100%{transform:translateY(0);opacity:1;} }
+  @keyframes fadeUp { to{opacity:1;transform:translateY(0);} }
+  @keyframes fadeUp { 0%{opacity:0;transform:translateY(40px);}100%{opacity:1;transform:translateY(0);} }
+  @keyframes pulse { 0%{transform:scale(1);}100%{transform:scale(1.04);} }
+</style>
+</head>
+
+<body>
+
+<h1>SELECT YOUR SIGNATURE PERFUME</h1>
+
+<div class="container">
+
+  <div class="card" style="animation-delay:0.2s">
+    <a href="sauvage.html">
+      <img src="images/sauvage.jpg"><br>
+      <h3>Sauvage</h3>
+    </a>
+    <p>Fresh · Strong · Iconic</p>
+  </div>
+
+  <div class="card" style="animation-delay:0.4s">
+    <a href="jadore.html">
+      <img src="images/jadore.jpg"><br>
+      <h3>J'adore</h3>
+    </a>
+    <p>Floral · Elegant · Luxurious</p>
+  </div>
+
+  <div class="card" style="animation-delay:0.6s">
+    <a href="missdior.html">
+      <img src="images/missdior.jpg"><br>
+      <h3>Miss Dior</h3>
+    </a>
+    <p>Romantic · Soft · Everyday Luxury</p>
+  </div>
+
+  <div class="card" style="animation-delay:0.8s">
+    <a href="fahrenheit.html">
+      <img src="images/fahrenheit.jpg"><br>
+      <h3>Fahrenheit</h3>
+    </a>
+    <p>Warm · Leather · Classic</p>
+  </div>
+
+</div>
+
+</body>
+</html>
